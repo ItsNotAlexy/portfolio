@@ -1,0 +1,230 @@
+body {
+  background: #111;
+  color: #fff;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #181818;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 24px;
+  background: #222;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+  flex: 1;
+  margin-bottom: 32px;
+}
+
+.intro h1 {
+  font-size: 2.2rem;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin: 0 0 18px 0;
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background: #232323;
+  color: #fff;
+  border-radius: 16px;
+  padding: 6px 16px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.section {
+  margin-top: 32px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #232323;
+  border-radius: 16px;
+  padding: 22px 24px;
+  flex: 1 1 250px;
+  min-width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  margin-bottom: 16px;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.card ul {
+  padding-left: 18px;
+  margin: 0;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+.tools, .links, .details {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.tool, .link, .detail {
+  background: #181818;
+  border-radius: 12px;
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.tool:hover, .link:hover {
+  background: #333;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.edu-main, .exp-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.edu-main h2, .exp-main h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.edu-desc, .exp-desc {
+  color: #bbb;
+  font-size: 0.98rem;
+  margin-bottom: 0;
+}
+
+.edu-year, .exp-year {
+  font-size: 1.05rem;
+  color: #aaa;
+  font-weight: 600;
+  background: #181818;
+  border-radius: 10px;
+  padding: 6px 16px;
+  min-width: 60px;
+  text-align: center;
+  margin-left: auto;
+}
+
+.exp-img, .edu-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: transparent;
+  padding: 2px;
+  margin: 0;
+  flex-shrink: 0;
+  display: block;
+  flex: 0 0 48px;
+  aspect-ratio: 1 / 1;
+}
+
+.tool i {
+  font-size: 1.3em;
+  margin-right: 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .exp-img, .edu-img {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    padding: 2px;
+    margin: 0;
+  }
+
+  .badges {
+    gap: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .edu-main, .exp-main { gap: 12px; }
+}
