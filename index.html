@@ -1,150 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profolio | Alexssh</title>
-    <link rel="stylesheet" href="style/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v8/font/simple-icons.min.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <img src="https://avatars.githubusercontent.com/u/101402577?v=4" alt="Avatar" class="avatar">
-            <div class="intro">
-                <h1>Hi, I'm Alex!</h1>
-                <p>Full Stack Developer with 2+ years of experience building scalable web applications and modern user interfaces. Passionate about clean code, performance, and great user experiences.</p>
-                <div class="badges">
-                    <span class="badge">🖥️ Web Development</span>
-                    <span class="badge">☁️ Cloud</span>
-                    <span class="badge">🖼️ Frontend Development</span>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Profolio | Alexssh</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v8/font/simple-icons.min.css">
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+        <div class="bg-grid" aria-hidden="true"></div>
+        <div class="container">
+            <section class="hero">
+                <img src="https://avatars.githubusercontent.com/u/101402577?v=4" alt="Avatar" class="avatar" />
+                <div>
+                    <h1 class="title"><span class="glitch" data-text="Alex — Systems / Web">Alex — Systems / Web</span></h1>
+                    <p class="subtitle">Full-stack developer focused on fast, secure, and resilient web systems.</p>
+                    <div class="badges">
+                        <span class="badge">Web Development</span>
+                        <span class="badge">Cloud</span>
+                        <span class="badge">Frontend</span>
+                    </div>
+                    <div class="quote">
+                        <p id="quote">“Talk is cheap, show me the code.”</p>
+                        <div class="cite" id="quote-cite">— Linus Trovalds, The benevolent dictator.</div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="section experience-grid">
-            <div class="card exp-card">
-                <div class="exp-main">
-                    <img src="images/lunes.png" alt="Lunes Host" class="exp-img">
-                    <div>
-                        <h2>IT Technician</h2>
-                        <div class="exp-company">Lunes Host LLC</div>
-                        <div class="exp-desc">Worked with clients to troubleshoot and resolve technical issues.</div>
+            <section class="section">
+                <div class="grid">
+                    <div class="card half">
+                        <h2>Experience</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/nexlayer.png" alt="NexLayer Studios" />
+                                <div>
+                                    <div class="name">Founder & CEO · NexLayer Studios</div>
+                                    <div class="meta">Leading client delivery using modern web tooling.</div>
+                                </div>
+                                <div class="year">2025 — Present</div>
+                            </div>
+                            <div class="item">
+                                <img src="images/lunes.png" alt="Lunes Host" />
+                                <div>
+                                    <div class="name">IT Technician · Lunes Host LLC</div>
+                                    <div class="meta">Troubleshooting and resolving client-side technical issues.</div>
+                                </div>
+                                <div class="year">2023 — Present</div>
+                            </div>
+                            <div class="item">
+                                <img src="images/arcio.png" alt="Arcio" />
+                                <div>
+                                    <div class="name">Frontend Web Developer · Arcio Live</div>
+                                    <div class="meta">React & TypeScript for product features and UI systems.</div>
+                                </div>
+                                <div class="year">2024 — 2025</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="exp-year">2023 - Present</div>
-                </div>
-            </div>
-            <div class="card exp-card">
-                <div class="exp-main">
-                    <img src="images/arcio.png" alt="Arcio" class="exp-img">
-                    <div>
-                        <h2>Frontend Web Developer</h2>
-                        <div class="exp-company">Arcio Live</div>
-                        <div class="exp-desc">Built and maintained web applications using React and TypeScript.</div>
+                    <div class="card half">
+                        <h2>Education</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img src="images/ricci.png" alt="SMAK Ricci 2" />
+                                <div>
+                                    <div class="name">High School · Informatics</div>
+                                    <div class="meta">SMAK Ricci 2</div>
+                                </div>
+                                <div class="year">2025</div>
+                            </div>
+                            <div class="item">
+                                <img src="images/ubm.png" alt="UBM" />
+                                <div>
+                                    <div class="name">Bachelor · Information Systems</div>
+                                    <div class="meta">Universitas Bunda Mulia</div>
+                                </div>
+                                <div class="year">Present</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="exp-year">2024-2025</div>
                 </div>
-            </div>
-            <div class="card exp-card">
-                <div class="exp-main">
-                    <img src="images/bloomix.png" alt="Bloomix" class="exp-img">
-                    <div>
-                        <h2>Full Stack Web Developer</h2>
-                        <div class="exp-company">Bloomix</div>
-                        <div class="exp-desc">Built and maintained web applications using various technologies.</div>
-                    </div>
-                    <div class="exp-year">2025 - Present</div>
-                </div>
-            </div>
-			<div class="card exp-card">
-                <div class="exp-main">
-                    <img src="images/nexlayer.png" alt="NexLayer Studios" class="exp-img">
-                    <div>
-                        <h2>Founder & CEO</h2>
-                        <div class="exp-company">NexLayer Studios</div>
-                        <div class="exp-desc">Creating innovative web solutions for clients using cutting-edge technologies.</div>
-                    </div>
-                    <div class="exp-year">2025 - Present</div>
-                </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="section education-grid">
-            <div class="card edu-card">
-                <div class="edu-main">
-                    <img src="images/ricci.png" alt="SMAK Ricci 2" class="edu-img">
-                    <div>
-                        <h2>High School</h2>
-                        <div class="edu-desc">Informatics<br>Bintaro, Indonesia</div>
+            <section class="section">
+                <div class="grid">
+                    <div class="card half">
+                        <h2>Tech Stack</h2>
+                        <div class="stack">
+                            <span class="chip"><i class="si si-react"></i> React</span>
+                            <span class="chip"><i class="si si-nodedotjs"></i> Node.js</span>
+                            <span class="chip"><i class="si si-express"></i> Express</span>
+                            <span class="chip"><i class="si si-mongodb"></i> MongoDB</span>
+                            <span class="chip"><i class="si si-typescript"></i> TypeScript</span>
+                            <span class="chip"><i class="si si-python"></i> Python</span>
+                            <span class="chip"><i class="si si-flask"></i> Flask</span>
+                            <span class="chip"><i class="si si-postgresql"></i> PostgreSQL</span>
+                        </div>
                     </div>
-                    <div class="edu-year">2025</div>
-                </div>
-            </div>
-            <div class="card edu-card">
-                <div class="edu-main">
-                    <img src="images/ubm.png" alt="ubm" class="edu-img">
-                    <div>
-                        <h2>Bachelor's Degree</h2>
-                        <div class="edu-desc">Business Information Systems<br>Serpong, Indonesia</div>
+                    <div class="card half">
+                        <h2>Tools</h2>
+                        <div class="stack">
+                            <span class="chip"><i class="si si-visualstudiocode"></i> VS Code</span>
+                            <span class="chip"><i class="si si-git"></i> Git & GitHub</span>
+                            <span class="chip"><i class="si si-figma"></i> Figma</span>
+                            <span class="chip"><i class="si si-postman"></i> Postman</span>
+                            <span class="chip"><i class="si si-docker"></i> Docker</span>
+                        </div>
                     </div>
-                    <div class="edu-year">Present</div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <div class="section">
-            <div class="card">
-                <h2>Tech Stack</h2>
-                <div class="tools">
-                    <span class="tool"><i class="si si-react"></i> React</span>
-                    <span class="tool"><i class="si si-nodedotjs"></i> Node.js</span>
-                    <span class="tool"><i class="si si-express"></i> Express</span>
-                    <span class="tool"><i class="si si-mongodb"></i> MongoDB</span>
-                    <span class="tool"><i class="si si-typescript"></i> TypeScript</span>
-                    <span class="tool"><i class="si si-python"></i> Python</span>
-                    <span class="tool"><i class="si si-flask"></i> Flask</span>
-                    <span class="tool"><i class="si si-postgresql"></i> PostgreSQL</span>
+            <section class="section">
+                <div class="grid">
+                    <div class="card half">
+                        <h2>Programming Languages</h2>
+                        <div class="stack">
+                            <span class="chip"><i class="si si-javascript"></i> JavaScript</span>
+                            <span class="chip"><i class="si si-typescript"></i> TypeScript</span>
+                            <span class="chip"><i class="si si-python"></i> Python</span>
+                        </div>
+                    </div>
+                    <div class="card half">
+                        <h2>Links</h2>
+                        <div class="links">
+                            <a class="link" href="#" target="_blank"><i class="si si-github"></i> GitHub</a>
+                            <a class="link" href="#" target="_blank"><i class="si si-linkedin"></i> LinkedIn</a>
+                            <a class="link" href="#" target="_blank"><i class="si si-instagram"></i> Instagram</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <h2>Tools</h2>
-                <div class="tools">
-                    <span class="tool"><i class="si si-visualstudiocode"></i> VS Code</span>
-                    <span class="tool"><i class="si si-git"></i> Git & GitHub</span>
-                    <span class="tool"><i class="si si-figma"></i> Figma</span>
-                    <span class="tool"><i class="si si-postman"></i> Postman</span>
-					<span class="tool"><i class="si si-docker"></i> Docker</span>
-				</div>
-            </div>
-        </div>
+            </section>
 
-        <div class="section">
-            <div class="card">
-                <h2>Programming Languages</h2>
-                <div class="tools">
-                    <span class="tool"><i class="si si-javascript"></i> JavaScript</span>
-                    <span class="tool"><i class="si si-typescript"></i> TypeScript</span>
-                    <span class="tool"><i class="si si-python"></i> Python</span>
-                </div>
-            </div>
-            <div class="card">
-                <h2>Portfolio</h2>
-                <div class="links">
-                    <a class="link" href="#" target="_blank"><i class="si si-github"></i> GitHub</a>
-                    <a class="link" href="#" target="_blank"><i class="si si-linkedin"></i> LinkedIn</a>
-					<a class="link" href=""  target="_blank"><i class="si si-instagram"></i> Instagram</a>
-                </div>
-            </div>
+            <div class="footer">𝐉𝐞𝐫𝐞𝐦𝐢𝐚𝐡 𝟐𝟗:𝟏𝟏 ♱</div>
         </div>
-
-        <div class="section">
-            <div class="card" style="flex: 1 1 100%;">
-                <h2>Details</h2>
-                <div class="details">
-                    <span class="detail"><i class="bi bi-calendar"></i> 18 years</span>
-                    <span class="detail"><i class="bi bi-envelope"></i> alexyy.dev@gmail.com</span>
-                    <span class="detail"><i class="bi bi-geo-alt"></i> Indonesia</span>
-                </div>
-            </div>
+    </body>
+</html>
