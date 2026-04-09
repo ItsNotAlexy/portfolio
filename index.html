@@ -1,139 +1,410 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Profolio | Alexssh</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v8/font/simple-icons.min.css">
-        <link rel="stylesheet" href="style/main.css">
-    </head>
-    <body>
-        <div class="bg-grid" aria-hidden="true"></div>
-        <div class="container">
-            <section class="hero">
-                <img src="https://avatars.githubusercontent.com/u/101402577?v=4" alt="Avatar" class="avatar" />
-                <div>
-                    <h1 class="title"><span class="glitch" data-text="Alex — Systems / Web">Alex — Systems / Web</span></h1>
-                    <p class="subtitle">Full-stack developer focused on fast, secure, and resilient web systems.</p>
-                    <div class="badges">
-                        <span class="badge">Web Development</span>
-                        <span class="badge">Cloud</span>
-                        <span class="badge">Frontend</span>
-                    </div>
-                    <div class="quote">
-                        <p id="quote">“Talk is cheap, show me the code.”</p>
-                        <div class="cite" id="quote-cite">— Linus Trovalds, The benevolent dictator.</div>
-                    </div>
-                </div>
-            </section>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ALEXYSSH // PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v8/font/simple-icons.min.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="scanlines" aria-hidden="true"></div>
+    <canvas id="binary-rain" aria-hidden="true"></canvas>
 
-            <section class="section">
-                <div class="grid">
-                    <div class="card half">
-                        <h2>Experience</h2>
-                        <div class="items">
-                            <div class="item">
-                                <img src="images/nexlayer.png" alt="NexLayer Studios" />
-                                <div>
-                                    <div class="name">Founder & CEO · NexLayer Studios</div>
-                                    <div class="meta">Leading client delivery using modern web tooling.</div>
-                                </div>
-                                <div class="year">2025 — Present</div>
-                            </div>
-                            <div class="item">
-                                <img src="images/lunes.png" alt="Lunes Host" />
-                                <div>
-                                    <div class="name">IT Technician · Lunes Host LLC</div>
-                                    <div class="meta">Troubleshooting and resolving client-side technical issues.</div>
-                                </div>
-                                <div class="year">2023 — Present</div>
-                            </div>
-                            <div class="item">
-                                <img src="images/arcio.png" alt="Arcio" />
-                                <div>
-                                    <div class="name">Frontend Web Developer · Arcio Live</div>
-                                    <div class="meta">React & TypeScript for product features and UI systems.</div>
-                                </div>
-                                <div class="year">2024 — 2025</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card half">
-                        <h2>Education</h2>
-                        <div class="items">
-                            <div class="item">
-                                <img src="images/ricci.png" alt="SMAK Ricci 2" />
-                                <div>
-                                    <div class="name">High School · Informatics</div>
-                                    <div class="meta">SMAK Ricci 2</div>
-                                </div>
-                                <div class="year">2025</div>
-                            </div>
-                            <div class="item">
-                                <img src="images/ubm.png" alt="UBM" />
-                                <div>
-                                    <div class="name">Bachelor · Information Systems</div>
-                                    <div class="meta">Universitas Bunda Mulia</div>
-                                </div>
-                                <div class="year">Present</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <div class="grid">
-                    <div class="card half">
-                        <h2>Tech Stack</h2>
-                        <div class="stack">
-                            <span class="chip"><i class="si si-react"></i> React</span>
-                            <span class="chip"><i class="si si-nodedotjs"></i> Node.js</span>
-                            <span class="chip"><i class="si si-express"></i> Express</span>
-                            <span class="chip"><i class="si si-mongodb"></i> MongoDB</span>
-                            <span class="chip"><i class="si si-typescript"></i> TypeScript</span>
-                            <span class="chip"><i class="si si-python"></i> Python</span>
-                            <span class="chip"><i class="si si-flask"></i> Flask</span>
-                            <span class="chip"><i class="si si-postgresql"></i> PostgreSQL</span>
-                        </div>
-                    </div>
-                    <div class="card half">
-                        <h2>Tools</h2>
-                        <div class="stack">
-                            <span class="chip"><i class="si si-visualstudiocode"></i> VS Code</span>
-                            <span class="chip"><i class="si si-git"></i> Git & GitHub</span>
-                            <span class="chip"><i class="si si-figma"></i> Figma</span>
-                            <span class="chip"><i class="si si-postman"></i> Postman</span>
-                            <span class="chip"><i class="si si-docker"></i> Docker</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section">
-                <div class="grid">
-                    <div class="card half">
-                        <h2>Programming Languages</h2>
-                        <div class="stack">
-                            <span class="chip"><i class="si si-javascript"></i> JavaScript</span>
-                            <span class="chip"><i class="si si-typescript"></i> TypeScript</span>
-                            <span class="chip"><i class="si si-python"></i> Python</span>
-                        </div>
-                    </div>
-                    <div class="card half">
-                        <h2>Links</h2>
-                        <div class="links">
-                            <a class="link" href="https://github.com/ItsNotAlexy" target="_blank"><i class="si si-github"></i> GitHub</a>
-                            <a class="link" href="https://www.linkedin.com/in/amadeus-theodore-6657aa269/" target="_blank"><i class="si si-linkedin"></i> LinkedIn</a>
-                            <a class="link" href="https://www.instagram.com/alexyy.dev/" target="_blank"><i class="si si-instagram"></i> Instagram</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <div class="footer">𝐉𝐞𝐫𝐞𝐦𝐢𝐚𝐡 𝟐𝟗:𝟏𝟏 ♱</div>
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-logo">
+                <span class="nav-bracket">[</span>
+                <span class="nav-name">ALEX</span>
+                <span class="nav-suffix">SSH</span>
+                <span class="nav-bracket">]</span>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" data-section="01">ABOUT</a></li>
+                <li><a href="#experience" data-section="02">EXPERIENCE</a></li>
+                <li><a href="#skills" data-section="03">SKILLS</a></li>
+                <li><a href="#projects" data-section="04">PROJECTS</a></li>
+                <li><a href="#certifications" data-section="05">CERTS</a></li>
+                <li><a href="#contact" data-section="06">CONTACT</a></li>
+            </ul>
         </div>
-    </body>
+    </nav>
+
+    <div class="container">
+        <section class="hero" id="about">
+            <div class="terminal-window hero-terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">OPERATOR_PROFILE — v3.2.1</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="hero-grid">
+                        <div class="hero-avatar-wrap">
+                            <img src="https://avatars.githubusercontent.com/u/101402577?v=4" alt="Avatar" class="avatar" />
+                            <div class="avatar-scanline"></div>
+                            <div class="avatar-status">
+                                <span class="status-dot"></span> ONLINE
+                            </div>
+                        </div>
+                        <div class="hero-info">
+                            <div class="hero-tag">SYS_OPERATOR // FULL-STACK DEV</div>
+                            <h1 class="hero-name">
+                                <span data-text="ALEX">HELLO, IM ALEX!</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                <span class="typed-text" id="typed-output"></span><span class="cursor">|</span>
+                            </p>
+                            <div class="hero-stats">
+                                <div class="stat">
+                                    <span class="stat-label">ROLE</span>
+                                    <span class="stat-value">Systems / Web Developer</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">FOCUS</span>
+                                    <span class="stat-value">Fast, Secure &amp; Resilient Systems</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">STATUS</span>
+                                    <span class="stat-value status-active">ACTIVE</span>
+                                </div>
+                            </div>
+                            <div class="hero-badges">
+                                <span class="badge">WEB DEV</span>
+                                <span class="badge">CLOUD</span>
+                                <span class="badge">FRONTEND</span>
+                                <span class="badge">BACKEND</span>
+                                <span class="badge">AI AUTOMATION</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="terminal-window quote-terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">TRANSMISSION_LOG</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="quote-line">
+                        <span class="prompt">root@alex:~$</span>
+                        <span class="quote-text">"Talk is cheap, show me the code."</span>
+                    </div>
+                    <div class="quote-cite">— Linus Torvalds, The benevolent dictator.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="section-header">
+                <div class="section-tag">02</div>
+                <h2 class="section-title">EXPERIENCE &amp; EDUCATION</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="grid-2col">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">WORK_HISTORY.log</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <img src="images/nexlayer.png" alt="NexLayer Studios" class="exp-icon" />
+                                <div>
+                                    <div class="exp-role">Founder &amp; CEO</div>
+                                    <div class="exp-company">NexLayer Studios</div>
+                                </div>
+                                <div class="exp-date">2025 — PRESENT</div>
+                            </div>
+                            <div class="exp-desc">Leading client delivery using modern web tooling and scalable architecture.</div>
+                            <div class="exp-bar"><div class="exp-bar-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <img src="images/lunes.png" alt="Lunes Host" class="exp-icon" />
+                                <div>
+                                    <div class="exp-role">IT Technician</div>
+                                    <div class="exp-company">Lunes Host LLC</div>
+                                </div>
+                                <div class="exp-date">2023 — PRESENT</div>
+                            </div>
+                            <div class="exp-desc">Troubleshooting and resolving client-side technical issues across infrastructure.</div>
+                            <div class="exp-bar"><div class="exp-bar-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <img src="images/arcio.png" alt="Arcio" class="exp-icon" />
+                                <div>
+                                    <div class="exp-role">Frontend Web Developer</div>
+                                    <div class="exp-company">Arcio Live</div>
+                                </div>
+                                <div class="exp-date">2024 — 2025</div>
+                            </div>
+                            <div class="exp-desc">React &amp; TypeScript for product features and UI component systems.</div>
+                            <div class="exp-bar"><div class="exp-bar-fill" style="width: 70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">EDUCATION.log</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <img src="images/ricci.png" alt="SMAK Ricci 2" class="exp-icon" />
+                                <div>
+                                    <div class="exp-role">High School · Informatics</div>
+                                    <div class="exp-company">SMAK Ricci 2</div>
+                                </div>
+                                <div class="exp-date">2025</div>
+                            </div>
+                            <div class="exp-desc">Foundation in computer science and informatics systems.</div>
+                            <div class="exp-bar"><div class="exp-bar-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="exp-item">
+                            <div class="exp-header">
+                                <img src="images/ubm.png" alt="UBM" class="exp-icon" />
+                                <div>
+                                    <div class="exp-role">Bachelor · Information Systems</div>
+                                    <div class="exp-company">Universitas Bunda Mulia</div>
+                                </div>
+                                <div class="exp-date">PRESENT</div>
+                            </div>
+                            <div class="exp-desc">Currently pursuing degree in Information Systems and software engineering.</div>
+                            <div class="exp-bar exp-bar-animated"><div class="exp-bar-fill" style="width: 40%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="section-header">
+                <div class="section-tag">03</div>
+                <h2 class="section-title">TECH ARSENAL</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="grid-3col">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">LANGUAGES</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="si si-javascript"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="si si-typescript"></i>
+                                    <span>TypeScript</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="si si-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-bar-fill" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">STACK</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="tech-grid">
+                            <div class="tech-chip"><i class="si si-react"></i><span>React</span></div>
+                            <div class="tech-chip"><i class="si si-nodedotjs"></i><span>Node.js</span></div>
+                            <div class="tech-chip"><i class="si si-express"></i><span>Express</span></div>
+                            <div class="tech-chip"><i class="si si-mongodb"></i><span>MongoDB</span></div>
+                            <div class="tech-chip"><i class="si si-flask"></i><span>Flask</span></div>
+                            <div class="tech-chip"><i class="si si-postgresql"></i><span>PostgreSQL</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">TOOLS</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="tech-grid">
+                            <div class="tech-chip"><i class="si si-visualstudiocode"></i><span>VS Code</span></div>
+                            <div class="tech-chip"><i class="si si-git"></i><span>Git</span></div>
+                            <div class="tech-chip"><i class="si si-figma"></i><span>Figma</span></div>
+                            <div class="tech-chip"><i class="si si-postman"></i><span>Postman</span></div>
+                            <div class="tech-chip"><i class="si si-docker"></i><span>Docker</span></div>
+                            <div class="tech-chip"><i class="si si-github"></i><span>GitHub</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-header">
+                <div class="section-tag">04</div>
+                <h2 class="section-title">PROJECTS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="grid-2col">
+                <div class="terminal-window project-card">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">PRJ-001</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="project-name">Lunes Host Control Panel</div>
+                        <div class="project-desc">Company customer dashboard platform built with modern web technologies.</div>
+                        <div class="project-tech">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Lunes-Hosting/controlpanel" class="project-link"><i class="bi bi-github"></i> SOURCE</a>
+                            <a href="https://betadash.lunes.host/" class="project-link"><i class="bi bi-box-arrow-up-right"></i> LIVE</a>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-indicator active"></span> DEPLOYED
+                        </div>
+                    </div>
+                </div>
+
+                <div class="terminal-window project-card">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">PRJ-002</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="project-name">Profolio</div>
+                        <div class="project-desc">Personal cyberpunk-themed portfolio showcasing skills, projects, and certifications.</div>
+                        <div class="project-tech">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ItsNotAlexy/portfolio" class="project-link" target="_blank"><i class="bi bi-github"></i> SOURCE</a>
+                            <a href="#" class="project-link" target="_blank"><i class="bi bi-box-arrow-up-right"></i> LIVE</a>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-indicator active"></span> DEPLOYED
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="certifications">
+            <div class="section-header">
+                <div class="section-tag">05</div>
+                <h2 class="section-title">CERTIFICATIONS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="grid-3col">
+                <div class="terminal-window cert-card">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">CERT-001</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="cert-icon"><i class="bi bi-patch-check-fill"></i></div>
+                        <div class="cert-name">Arduino Digital Literacy Certification</div>
+                        <div class="cert-issuer">SOKRATES - Empowering School</div>
+                        <div class="cert-date">Issued: Mar 2024</div>
+                        <a href="https://www.linkedin.com/in/amadeus-theodore-6657aa269/overlay/Certifications/1940280333/treasury/?profileId=ACoAAEHKlS0Bh66R-wNr_VB-oNu-arDnh1gA8_Q" class="cert-verify" target="_blank"><i class="bi bi-shield-check"></i> VERIFY</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="section-header">
+                <div class="section-tag">06</div>
+                <h2 class="section-title">ESTABLISH CONNECTION</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="terminal-window contact-terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">OUTBOUND_LINKS — SECURE CHANNEL</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="contact-grid">
+                        <a class="contact-card" href="https://github.com/ItsNotAlexy" target="_blank">
+                            <div class="contact-icon"><i class="si si-github"></i></div>
+                            <div class="contact-label">GITHUB</div>
+                            <div class="contact-handle">@ItsNotAlexy</div>
+                            <div class="contact-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                        </a>
+                        <a class="contact-card" href="https://www.linkedin.com/in/amadeus-theodore-6657aa269/" target="_blank">
+                            <div class="contact-icon"><i class="si si-linkedin"></i></div>
+                            <div class="contact-label">LINKEDIN</div>
+                            <div class="contact-handle">Amadeus Theodore</div>
+                            <div class="contact-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                        </a>
+                        <a class="contact-card" href="https://www.instagram.com/alexyy.dev/" target="_blank">
+                            <div class="contact-icon"><i class="si si-instagram"></i></div>
+                            <div class="contact-label">INSTAGRAM</div>
+                            <div class="contact-handle">@alexyy.dev</div>
+                            <div class="contact-arrow"><i class="bi bi-arrow-up-right"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-line"></div>
+            <div class="footer-content">
+                <span class="footer-copy">&copy; 2026 Alexyssh</span>
+                <span class="footer-verse">𝐉𝐞𝐫𝐞𝐦𝐢𝐚𝐡 𝟐𝟗:𝟏𝟏 ♱</span>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
